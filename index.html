@@ -11,16 +11,21 @@
 </head>
 <body>
   <h1>ZOINK Graffiti in SF</h1>
-  <p>This is a demo site showing one location where ZOINK graffiti was found in San Francisco.</p>
+  <p>Map of discovered ZOINK tags in San Francisco.</p>
   <div id="map"></div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    var map = L.map('map').setView([37.77, -122.41], 13);
+    var map = L.map('map').setView([37.787, -122.406], 14);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-    var marker = L.marker([37.77, -122.41]).addTo(map)
-      .bindPopup("<b>ZOINK spotted!</b><br><img src='zoink.jpg' width='150'>");
+    // ZOINK near tunnel (IMG_1898)
+    L.marker([37.79313, -122.40775]).addTo(map)
+      .bindPopup("<b>ZOINK graffiti in tunnel</b><br><img src='zoink2.jpg' width='150'>");
+
+    // ZOINK by loading dock (IMG_1902)
+    L.marker([37.78189, -122.40534]).addTo(map)
+      .bindPopup("<b>ZOINK graffiti by loading dock</b><br><img src='zoink3.jpg' width='150'>");
   </script>
 </body>
 </html>
