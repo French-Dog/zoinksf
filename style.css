@@ -32,3 +32,8 @@ nav a:hover {
   color: #002233;
   box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
 }
+
+#map {
+  height: calc(100vh - 130px);
+  width: 100%;
+}
